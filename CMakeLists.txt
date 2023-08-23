@@ -192,7 +192,6 @@ macro(add_clang_library name)
     endif()
     add_library( ${name} ${libkind} ${srcs} )
     if( LLVM_COMMON_DEPENDS )
-        MESSAGE(STATUS "aaa ${LLVM_COMMON_DEPENDS}")
         add_dependencies( ${name} ${LLVM_COMMON_DEPENDS} )
     endif( LLVM_COMMON_DEPENDS )
 
